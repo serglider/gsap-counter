@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<font>
+	<info face="fontos" size="80" bold="0" italic="0"/>
+	<common lineHeight="80" base="80" scaleW="512" scaleH="512" pages="1" packed="0"/>
+	<pages>
+		<page id="0" file="fontos.png"/>
+	</pages>
+	<chars count="15">
+		<char id="32" x="0" y="0" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!--   -->
+		<char id="36" x="268" y="110" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- $ -->
+		<char id="44" x="402" y="110" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- , -->
+		<char id="46" x="335" y="110" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- . -->
+		<char id="48" x="67" y="0" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 0 -->
+		<char id="49" x="134" y="0" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 1 -->
+		<char id="50" x="201" y="0" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 2 -->
+		<char id="51" x="268" y="0" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 3 -->
+		<char id="52" x="335" y="0" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 4 -->
+		<char id="53" x="402" y="0" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 5 -->
+		<char id="54" x="0" y="110" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 6 -->
+		<char id="55" x="67" y="110" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 7 -->
+		<char id="56" x="134" y="110" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 8 -->
+		<char id="57" x="201" y="110" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- 9 -->
+		<char id="8364" x="0" y="220" width="57" height="93" page="0" xadvance="52" xoffset="0" yoffset="0"/>
+		<!-- € -->
+	</chars>
+</font>

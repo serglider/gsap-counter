@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>gsap counter</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&display=swap');
+            body,
+            html {
+                margin: 0;
+                background-color: #474f45;
+                color: white;
+                font-family: sans-serif;
+            }
+
+            body {
+                overflow: hidden;
+            }
+
+            .container {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .control-set {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 10px;
+            }
+
+            .title {
+                padding: 5px;
+                color: #474f45;
+            }
+
+            #controls {
+                background-color: #818f7d;
+                padding: 10px;
+            }
+
+            #counter {
+                background-color: #474f45;
+                flex-basis: 75vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Azeret Mono', monospace;
+                font-size: 130px;
+                color: #c5dbbf;
+            }
+
+            input {
+                width: 130px;
+                padding: 5px;
+            }
+
+            button {
+                width: 130px;
+                padding: 2px;
+            }
+
+            .My-Color-Theme-1-hex {
+                color: #474f45;
+            }
+            .My-Color-Theme-2-hex {
+                color: #c5dbbf;
+            }
+            .My-Color-Theme-3-hex {
+                color: #818f7d;
+            }
+            .My-Color-Theme-4-hex {
+                color: #8c9c87;
+            }
+            .My-Color-Theme-5-hex {
+                color: #697566;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="controls">
+                <div class="control-set">
+                    <span class="title">Common</span>
+                    <div>
+                        <label
+                            >Update rate
+                            <input type="number" id="updateRate" value="1" />
+                        </label>
+                        <button id="updateRateBtn">set rate</button>
+                    </div>
+                    <button id="pauseBtn">pause</button>
+                    <button id="resumeBtn">resume</button>
+                    <button id="completeBtn">complete</button>
+                </div>
+                <!--                <hr />-->
+                <div class="control-set">
+                    <span class="title">Option 1</span>
+                    <label
+                        >duration
+                        <input type="number" id="duration1" value="2" />
+                    </label>
+
+                    <label
+                        >ease
+                        <input type="text" id="ease1" value="none" />
+                    </label>
+
+                    <label
+                        >init value
+                        <input type="number" id="startValue1" value="0" />
+                    </label>
+
+                    <label
+                        >final value
+                        <input type="number" id="endValue1" value="100" />
+                    </label>
+
+                    <button id="startBtn1">start from init</button>
+                    <button id="startCurrentBtn1">start from current</button>
+                </div>
+                <!--                <hr />-->
+                <div class="control-set">
+                    <span class="title">Option 2</span>
+                    <label
+                        >duration
+                        <input type="number" id="duration2" value="6" />
+                    </label>
+
+                    <label
+                        >ease
+                        <input type="text" id="ease2" value="steps(36)" />
+                    </label>
+
+                    <label
+                        >init value
+                        <input type="number" id="startValue2" value="0" />
+                    </label>
+
+                    <label
+                        >final value
+                        <input type="number" id="endValue2" value="2000" />
+                    </label>
+
+                    <button id="startBtn2">start from init</button>
+                    <button id="startCurrentBtn2">start from current</button>
+                </div>
+                <!--                <hr />-->
+                <div class="control-set">
+                    <span class="title">Option 3</span>
+                    <label
+                        >duration
+                        <input type="number" id="duration3" value="2" />
+                    </label>
+
+                    <label
+                        >ease
+                        <input type="text" id="ease3" value="none" />
+                    </label>
+
+                    <label
+                        >init value
+                        <input type="number" id="startValue3" value="0" />
+                    </label>
+
+                    <label
+                        >final value
+                        <input type="number" id="endValue3" value="5.25" />
+                    </label>
+
+                    <button id="startBtn3">start from init</button>
+                    <button id="startCurrentBtn3">start from current</button>
+                </div>
+            </div>
+
+            <div id="counter"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
