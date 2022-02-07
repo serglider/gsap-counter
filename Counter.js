@@ -13,6 +13,7 @@ export default class Counter {
         this._count = {
             value: 0,
         };
+
         this._tween = this._gsapTo(this._count, {
             paused: true,
             value: 0,
