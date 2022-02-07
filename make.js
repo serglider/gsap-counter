@@ -1,6 +1,6 @@
 const esbuild = require('esbuild');
 const args = process.argv.slice(2);
-const DEMO_DIR = 'demo';
+const DEMO_DIR = 'docs';
 const buildConfig = {
     entryPoints: [`${DEMO_DIR}/src/index.js`],
     bundle: true,
