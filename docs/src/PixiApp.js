@@ -11,7 +11,7 @@ export function createPixiApp(counter) {
     });
     counterBlock.appendChild(app.view);
 
-    app.loader.add('fontos', './assets/fontos.xml').load(() => {
+    app.loader.add("fontos", './assets/fontos.xml').load(() => {
         const tf = new BitmapText('$0.00', {
             fontName: 'fontos',
             fontSize: 160,
