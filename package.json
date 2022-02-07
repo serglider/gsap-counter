@@ -1,19 +1,26 @@
 {
     "name": "gsap-counter",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "version": "0.1.4",
+    "description": "GSAP based counter",
+    "author": {
+        "name": "Sergey Chernykh",
+        "email": "s-chernykh@outlook.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/serglider/gsap-counter.git"
+    },
+    "license": "MIT",
+    "main": "Counter.js",
     "scripts": {
-        "build": "node make.js"
+        "start-demo": "node make.js dev",
+        "build-demo": "node make.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
     "devDependencies": {
+        "browser-sync": "^2.27.7",
         "esbuild": "^0.14.18",
-        "prettier": "^2.5.1"
-    },
-    "dependencies": {
+        "http-server": "^14.1.0",
+        "prettier": "^2.5.1",
         "gsap": "^3.9.1",
         "pixi.js": "^6.2.2"
     }

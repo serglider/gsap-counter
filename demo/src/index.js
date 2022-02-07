@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import Counter from '../Counter';
+import Counter from '../../Counter';
 import { createControls } from './Controls';
 import { createPixiApp } from './PixiApp';
 import { createHTMLApp } from './HTMLApp';
