@@ -4,3 +4,9 @@ This is a gist-like project showing a way to implement a number counter using th
 
 
 See [Counter.js](./Counter.js) for the documentation)
+
+### Demo
+
+[PixiJS + bitmap font](https://serglider.github.io/gsap-counter/)
+
+[HTML based](https://serglider.github.io/gsap-counter/?dom)
