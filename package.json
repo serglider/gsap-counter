@@ -30,34 +30,6 @@
         "pixi.js": "^6.2.2",
         "prettier": "^2.5.1"
     },
-    "eslintConfig": {
-        "env": {
-            "browser": true,
-            "es2021": true
-        },
-        "extends": [
-            "eslint:recommended",
-            "prettier"
-        ],
-        "parserOptions": {
-            "ecmaVersion": "latest",
-            "sourceType": "module"
-        },
-        "rules": {
-            "indent": [
-                "error",
-                4
-            ],
-            "quotes": [
-                "error",
-                "single"
-            ],
-            "semi": [
-                "error",
-                "always"
-            ]
-        }
-    },
     "lint-staged": {
         "*.js": "eslint --fix",
         "*.{js,css,md,json}": "prettier --write"
