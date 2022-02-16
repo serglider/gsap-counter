@@ -1,6 +1,6 @@
 const defaultConfig = {
     duration: 2,
-    ease: 'none',
+    ease: Power1.easeOut,
     updateRate: 1,
     decimalsEpsilon: 0,
 };
@@ -91,24 +91,27 @@ export default class Counter {
      * @param {number} initValue
      */
     start(targetValue, initValue = 0) {
-        this.setCurrentValue(initValue);
-        let tick = 0;
-        this._tween = this._gsapTo(this._count, {
-            paused: true,
-            overwrite: true,
-            ease: this._config.ease,
-            duration: this._config.duration,
-            value: targetValue - this._config.decimalsEpsilon,
-            onUpdate: () => {
-                tick++;
-                this._notifyListeners(tick);
-            },
-        });
+        return new Promise(resolve => {
+            this.setCurrentValue(initValue);
+            let tick = 0;
+            this._tween = this._gsapTo(this._count, this._config.duration, {
+                paused: true,
+                overwrite: true,
+                ease: this._config.ease,
+                value: targetValue - this._config.decimalsEpsilon,
+                onUpdate: () => {
+                    tick++;
+                    this._notifyListeners(tick);
+                },
+                onComplete: ()=>{
+                    this.setCurrentValue(targetValue);
+                    resolve(this);
+                }
+            });
 
-        return this._tween.play().then(() => {
-            this.setCurrentValue(targetValue);
-            return this;
-        });
+            this._tween.play();
+        })
+
     }
 
     /**
